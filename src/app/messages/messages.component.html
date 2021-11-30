@@ -1,0 +1,8 @@
+<h2>My Messages</h2>
+<ul class="messages">
+  <li *ngFor="let message of messages">
+    <a routerLink="/detail/{{message.id}}">
+      <span class="badge">{{message.id}}</span> {{message.name}}
+    </a>
+  </li>
+</ul>

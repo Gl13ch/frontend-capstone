@@ -1,0 +1,8 @@
+<div *ngIf="successService.successes.length">
+
+  <h2>successes</h2>
+  <button class="clear"
+          (click)="successService.clear()">Clear successes</button>
+  <div *ngFor='let success of successService.successes'> {{success}} </div>
+
+</div>
