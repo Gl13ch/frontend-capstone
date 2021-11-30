@@ -1,0 +1,7 @@
+<h2>Top Messages</h2>
+<div class="messages-menu">
+  <a *ngFor="let message of messages"
+    routerLink="/detail/{{message.id}}">
+    {{message.name}}
+  </a>
+</div>
