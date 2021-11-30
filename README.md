@@ -28,4 +28,4 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 =======
 # frontend-capstone
->>>>>>> 1f1061f4f4ffe5754058e708a31cc597d81e4282
+>>>>>>> c7f6777dff4c32a186fc90c2c737035e4632e136
