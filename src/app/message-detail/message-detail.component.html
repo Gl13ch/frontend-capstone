@@ -1,11 +1,11 @@
 <div *ngIf="message">
-
   <h2>{{message.name}} Details</h2>
-  <div><span>id: </span>{{message.id}}</div>
+  <div><span>id: </span>{{message._id}}</div>
   <div><span>content: </span>{{message.content}}</div>
   <div>
     <label for="message-name">User: </label>
     <input id="message-name" [(ngModel)]="message.name" placeholder="name">
   </div>
   <button (click)="goBack()">go back</button>
+  <button (click)="save()">save</button>
 </div>

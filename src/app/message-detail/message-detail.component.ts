@@ -23,13 +23,16 @@ export class MessageDetailComponent implements OnInit {
     this.getMessage();
   }
 
-  getMessage(): void {
-    const id = Number(this.route.snapshot.paramMap.get('id'));
-    this.messageService.getMessage(id)
-      .subscribe(message => this.message = message);
-  }
+  getMessage() {}
 
   goBack(): void {
     this.location.back();
+  }
+
+  save(): void {
+    if (this.message) {
+      this.messageService.updateMessage(this.message)
+        .subscribe(() => this.goBack());
+    }
   }
 }

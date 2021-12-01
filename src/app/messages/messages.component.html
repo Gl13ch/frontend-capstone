@@ -1,8 +1,25 @@
 <h2>My Messages</h2>
+
+<div>
+  <label for="new-message">Message name: </label>
+  <input id="new-message" #messageName />
+
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button class="add-button" (click)="add(messageName.value); messageName.value=''">
+    Add message
+  </button>
+</div>
+
 <ul class="messages">
   <li *ngFor="let message of messages">
-    <a routerLink="/detail/{{message.id}}">
-      <span class="badge">{{message.id}}</span> {{message.name}}
+    <a routerLink="/messages/{{message._id}}">
+      {{message.name}}
     </a>
+    <br />
+    {{message.content}}
+    <br />
+    {{message._id}}
+    <button class="delete" title="delete message"
+      (click)="delete(message)">x</button>
   </li>
 </ul>

@@ -8,7 +8,7 @@ import { MessageDetailComponent } from './message-detail/message-detail.componen
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
-  { path: 'detail/:id', component: MessageDetailComponent },
+  { path: 'messages/:id', component: MessageDetailComponent },
   { path: 'messages', component: MessagesComponent }
 ];
 
