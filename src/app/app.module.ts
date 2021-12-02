@@ -5,7 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { MessagesComponent } from './messages/messages.component';
-import { MessageDetailComponent } from './message-detail/message-detail.component';
+
 import { SuccessComponent } from './success/success.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -15,7 +15,6 @@ import { SearchComponent } from './search/search.component';
   declarations: [
     AppComponent,
     MessagesComponent,
-    MessageDetailComponent,
     SuccessComponent,
     DashboardComponent,
     SearchComponent

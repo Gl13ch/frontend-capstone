@@ -10,6 +10,14 @@
   </button>
 </div>
 
+<!-- <div>
+  <div>
+    <label for="message-name">User: </label>
+    <input id="message-name" placeholder="name">
+  </div>
+  <button (click)="save()">save</button>
+</div> -->
+
 <ul class="messages">
   <li *ngFor="let message of messages">
     <a routerLink="/messages/{{message._id}}">

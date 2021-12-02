@@ -35,4 +35,9 @@ export class MessagesComponent implements OnInit {
     this.messages = this.messages.filter(m => m !== message);
     this.messageService.deleteMessage(message._id).subscribe();
   }
+
+  // update(message: Message): void {
+  //   this.messages = this.messages.filter(m => m !== message);
+  //   this.messageService.updateMessage(message._id).subscribe();
+  // }
 }
